@@ -39,7 +39,7 @@ nav ul li a {
   color: #FFFFFF;
   padding: 10px 15px;
   display: block;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -57,10 +57,48 @@ main section {
   border: 1px solid #E0BFC6; 
   border-radius: 8px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 main section h2 {
   color: #C97A95; 
+}
+
+main section:hover {
+  transform: scale(1.02);
+}
+
+/* table styling */
+
+caption {
+  font-size: 1.04em;
+  color: #B76E84;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+colgroup col:first-child,
+colgroup col:nth-child(3) {
+  background-color: #F8E6EC; /* soft blush */
+}
+
+th, td {
+  border: 1px solid #D8A7B1;
+  padding: 12px;
+  text-align: center;
+}
+
+thead {
+  background-color: #C97A95; /* matches header */
+  color: #FFFFFF;
+}
+
+tfoot {
+  background-color: #F3DDE4; /* light mauve */
 }
 
 /* footer styling */
@@ -73,6 +111,5 @@ footer {
   color: #FFFFFF;
   margin-top: 40px;
 }
-
 
 
