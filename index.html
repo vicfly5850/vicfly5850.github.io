@@ -22,7 +22,7 @@
 <!-- Navigational menu that uses a bullet list -->
 
 <nav>
-<ul>
+<ul class="nav-flex">
 <li><a href="#about">About</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -31,7 +31,8 @@
 
 <!-- The main content area -->
 
-<main>
+<main class="main-flex">
+
 <section id="about">
 <h2>About Me</h2>
 <p>Hi! I'm a passionate web developer learning HTML, CSS, and Javascript. I love to build awesome websites!</p>
@@ -82,7 +83,23 @@
 
 <section id="contact">
 <h2>Contact Me</h2>
-<p>If you would like to reach out, please send me an email. I would love to hear from you.</p>
+
+<form class="form-flex">
+<label for="name">Name:</label>
+<input type="text id="name" name="name" required />
+
+<label for="email">Email:</label>
+<input type="text id="email" name="email" required />
+
+<label for="name">Subject:</label>
+<input type="text id="subject" name="subject" />
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5"></textarea>
+
+<input type="submit" value="Send Message" />
+</form>
+
+
 </section>
 
 </main>
